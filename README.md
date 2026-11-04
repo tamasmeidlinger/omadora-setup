@@ -10,6 +10,15 @@
 1. Under `omarchy/themes` you can find your own theme (incomplete)
 2. Don't copy the whole directory only themes, this directory is here for reference for later on
 
+## theme neovim - symlink omarchy's neovim.lua
+
+```bash
+ln -sf ~/.local/state/omarchy/current/theme/neovim.lua \
+~/.config/nvim/lua/plugins/theme.lua
+```
+
+Delete your own theme if you copied from dotfiles.
+
 ## Wifi problems
 
 In case you have to connect to wifi using nmcli:
