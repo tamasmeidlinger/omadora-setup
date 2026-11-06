@@ -21,6 +21,7 @@
 
 -- Disable a default binding without replacing it.
 hl.unbind("SUPER + W")
+hl.unbind("SUPER + J")
 
 -- Switching workspaces
 o.bind("CTRL + SHIFT + K", "Next workspace", hl.dsp.focus({ workspace = "e+1" }))
@@ -47,6 +48,7 @@ o.rebind("CTRL + SHIFT + 5", "Move to workspace 5", hl.dsp.window.move({ workspa
 -- Launching apps
 o.bind("CTRL + SPACE", "Rofi", "rofi -show drun")
 o.bind("CTRL + RETURN", "Launch Terminal", "foot")
+o.rebind("F5", "Take a Screenshot", "omarchy screenshot")
 
 -- Screenshot, copy paste, go to workspace
 
